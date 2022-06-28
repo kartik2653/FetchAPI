@@ -19,7 +19,7 @@ const ItemView = ({item})=>{
 };
 
 const MainScreen = ({changeIt,items,setItems}) => {
-  
+  var key=1;
   const [text, setText] = useState("");
   const fetchItems = () => {
    changeIt(true);
@@ -51,7 +51,7 @@ const MainScreen = ({changeIt,items,setItems}) => {
       <FlatList
       data={items.filter((item)=>item.indexOf(text.toLocaleLowerCase())>=0)}
       renderItem={ItemView}
-      keyExtractor={(item)=>1}
+      keyExtractor={(item)=>{key++;}}
       />
     </View>
     </View>
