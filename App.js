@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState, useContext} from 'react';
+import React, {useState} from 'react';
 import MainScreen from './assets/screens/mainScreen';
 import Progress from './assets/screens/loading';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';

@@ -51,7 +51,7 @@ const MainScreen = ({changeIt,items,setItems}) => {
       <FlatList
       data={items.filter((item)=>item.indexOf(text.toLocaleLowerCase())>=0)}
       renderItem={ItemView}
-      keyExtractor={(item)=>{key++;}}
+      keyExtractor={(item)=>key++}
       />
     </View>
     </View>
